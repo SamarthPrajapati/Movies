@@ -21,4 +21,10 @@ cd movies
 
 flutter run -d chrome --web-renderer html
 
+//
+
+flutter run --no-sound-null-safety
+
 '''
+
+
