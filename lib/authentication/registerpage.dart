@@ -4,10 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:myapp/authentication/validator.dart';
 import 'package:myapp/style/theme.dart' as Style;
 
-
 import 'fireauth.dart';
 import 'profilepage.dart';
-
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -44,6 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
           child: Container(
             margin: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
             height: 700,
+            width: 600,
             padding: EdgeInsets.only(left: 24, right: 24),
             child: Center(
               child: Container(
@@ -54,7 +53,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(height: 20,),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Text(
                       'Register',
                       style: TextStyle(fontSize: 50),

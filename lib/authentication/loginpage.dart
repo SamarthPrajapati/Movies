@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:myapp/authentication/registerpage.dart';
 import 'package:myapp/style/theme.dart' as Style;
 
-
 import 'fireauth.dart';
 import 'profilepage.dart';
 import 'validator.dart';
@@ -68,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     color: Colors.white70,
                     height: 700,
-                    width: 700,
+                    width: 600,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -84,17 +83,17 @@ class _LoginPageState extends State<LoginPage> {
                           child: Center(
                             child: Container(
                               height: 70,
-                              width: 800,
+                              width: 850,
                               margin: EdgeInsets.fromLTRB(50, 0, 50, 0),
                               color: Colors.blue[100],
                               child: Center(
                                 child: Padding(
-                                  padding: EdgeInsets.fromLTRB(20, 10, 10, 10),
+                                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   child: Text(
                                     'If you are not able to login and want to try the website Please Click here!!',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 18,
                                     ),
                                   ),
                                 ),
@@ -159,6 +158,7 @@ class _LoginPageState extends State<LoginPage> {
                                       children: [
                                         Expanded(
                                           child: ElevatedButton(
+                                            
                                             onPressed: () async {
                                               _focusEmail.unfocus();
                                               _focusPassword.unfocus();
