@@ -32,7 +32,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
     return Scaffold(
       appBar: AppBar(
           centerTitle: true,
-          title: const Text('Assignment'),
+          title: const Text('Movie Ticket Booking'),
           backgroundColor: Colors.black),
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(

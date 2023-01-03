@@ -15,7 +15,7 @@ class _FragmentHomeState extends State<FragmentHome> {
   final _searchController = TextEditingController();
   Icon _customIcon = Icon(Icons.search);
   Widget _customSearchBar = Text(
-    "Movies/Series",
+    "Movies",
     style: GoogleFonts.overpass(),
   );
   String _searchText = "Mission Impossible";

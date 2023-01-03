@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/pages/fragments/buy_ticket.dart';
 import 'package:myapp/pages/watch_list.dart';
 import 'package:myapp/services/movie_model.dart';
 import 'package:myapp/style/theme.dart' as Style;
@@ -75,6 +76,22 @@ class _MovieDetailsState extends State<MovieDetails> {
                               fontSize: 18, color: Style.Colors.secondColor))
                     ],
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      SizedBox(width: 17),
+                      Text(
+                        "Seats: ",
+                        style: GoogleFonts.overpass(
+                            fontSize: 18,
+                            color: Colors.white,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      Text("40",
+                          style: GoogleFonts.overpass(
+                              fontSize: 18, color: Style.Colors.secondColor))
+                    ],
+                  ),
                 ],
               ),
               SizedBox(height: 20),
@@ -99,6 +116,29 @@ class _MovieDetailsState extends State<MovieDetails> {
                                       side: BorderSide(color: Colors.blue)))),
                       onPressed: () => Navigator.pop(context),
                     ),
+                  ),
+                  SizedBox(
+                    height: 75,
+                    width: 250,
+                    child: ElevatedButton(
+                        child: Text("Book Ticket".toUpperCase(),
+                            style: TextStyle(fontSize: 20)),
+                        style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.blue),
+                            shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                    side: BorderSide(color: Colors.blue)))),
+                        onPressed: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => BuyTicket(),
+                              ),
+                            )),
                   ),
                   buttonChoice(widget.currMovie),
                 ],

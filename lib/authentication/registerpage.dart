@@ -36,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
       child: Scaffold(
         // backgroundColor: Style.Colors.mainColor,
         appBar: AppBar(
-          title: Text('Register'),
+          title: Text('Admin'),
         ),
         body: Center(
           child: Container(
@@ -57,7 +57,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       height: 20,
                     ),
                     Text(
-                      'Register',
+                      'Admin',
                       style: TextStyle(fontSize: 50),
                     ),
                     Form(
@@ -154,7 +154,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                           }
                                         },
                                         child: Text(
-                                          'Sign up',
+                                          'Admin Login',
                                           style: TextStyle(color: Colors.white),
                                         ),
                                       ),

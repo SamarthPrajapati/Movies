@@ -194,7 +194,7 @@ class _LoginPageState extends State<LoginPage> {
                                               }
                                             },
                                             child: Text(
-                                              'Sign In',
+                                              'User Login',
                                               style: TextStyle(
                                                   color: Colors.white),
                                             ),
@@ -212,7 +212,7 @@ class _LoginPageState extends State<LoginPage> {
                                               );
                                             },
                                             child: Text(
-                                              'Register',
+                                              'Admin Login',
                                               style: TextStyle(
                                                   color: Colors.white),
                                             ),
